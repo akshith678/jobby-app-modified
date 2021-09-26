@@ -1,74 +1,53 @@
 .home-container {
-  background-image: url(https://assets.ccbp.in/frontend/react-js/home-lg-bg.png);
-  background-size: cover;
+  padding: 40px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');
   height: 100vh;
-}
-
-@media screen and (min-width: 768px) {
-  .home-container {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 96px;
-  }
-}
-
-.home-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .home-content {
-    align-items: flex-start;
-  }
+  background-size: cover;
 }
 
 .home-heading {
+  color: #ffffff;
   font-family: 'Roboto';
-  font-weight: bold;
-  margin-top: 0px;
+  font-size: 50px;
+}
+
+.home-paragraph {
+  color: #ffffff;
+  font-family: 'Roboto';
   font-size: 25px;
+  width: 50%;
+}
+
+.home-jobs-button {
   color: #ffffff;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .home-heading {
-    font-size: 35px;
-    text-align: left;
-  }
-}
-
-.home-description {
+  background-color: #6366f1;
+  border: 0;
+  border-radius: 5px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 15px;
   font-family: 'Roboto';
-  margin-top: 28px;
-  font-size: 14px;
-  line-height: 28px;
-  color: #ffffff;
-  margin-bottom: 0;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .home-description {
-    font-size: 18px;
-    margin-top: 0;
-    text-align: left;
-  }
-}
-
-.find-job-button {
-  width: 150px;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: 'Roboto';
-  color: white;
-  border: none;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-radius: 6px;
-  background-color: #0967d2;
-  margin-top: 20px;
+  padding: 5px;
+  height: 40px;
   cursor: pointer;
+}
+
+.retry-btn-link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .home-container {
+    padding: 15px;
+    flex-grow: 1;
+  }
+
+  .home-heading {
+    font-size: 25px;
+  }
+
+  .home-paragraph {
+    font-size: 20px;
+    width: 100%;
+  }
 }
